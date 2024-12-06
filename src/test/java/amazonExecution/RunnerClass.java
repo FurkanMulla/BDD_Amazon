@@ -8,10 +8,12 @@ import io.cucumber.testng.CucumberOptions;
 		features = {"src\\test\\resources\\AmazonFeatureFile\\HomePage.feature"},
 		glue = {"amazonExecution"},
 		publish = true,
-		plugin= {"pretty"},
-		tags = "@sanity"
+		plugin= {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		//tags = "@sanity"
 		)
 
-public class RunnerClass extends AbstractTestNGCucumberTests{
+public class RunnerClass extends AbstractTestNGCucumberTests
+{
+	
 
 }

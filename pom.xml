@@ -10,6 +10,13 @@
     <artifactId>cucumber-java</artifactId>
     <version>7.19.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>compile</scope>
+</dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -21,6 +28,13 @@
     <artifactId>selenium-java</artifactId>
     <version>4.25.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.13.0</version>
+</dependency>
+
 </dependencies>
 <build>
     <pluginManagement>
@@ -40,7 +54,8 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
           <configuration>
-            <!-- put your configurations here -->
+             <source>1.8</source>
+                <target>1.8</target>
           </configuration>
         </plugin>
       </plugins>

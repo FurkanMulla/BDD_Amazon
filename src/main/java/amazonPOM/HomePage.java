@@ -14,10 +14,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 	
-	@FindBy(xpath = "//div[@id='nav-cart-count-container']")
+	@FindBy(xpath = "//div[@id='nav-cart-count-container123']")
 	private WebElement cartIcon;
 	
-	@FindBy(xpath = "//*[@class='a-carousel-card']//img[@alt='op']")
+	@FindBy(xpath = "//*[@class='a-carousel-card']//img[@alt='op123']")
 	private WebElement smartphones;
 	
 	@FindBy(xpath = "(//span[text()='Smartphones'])[2]")
@@ -40,7 +40,7 @@ public class HomePage {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		act = new Actions(driver);
 	}
 	public String fetchTitle()
